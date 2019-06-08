@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- <meta name="viewport" content="width=device-width"> -->
+  <title>tefTestWPApp</title>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width, shrink-to-fit=no">
+  <meta name="application-name" content="tefTestWPApp">
+  <!-- Web App	================================== -->
+	<!-- <link rel="manifest" href="manifest.json">-->
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="manifest" href="./manifest.json"> -->
+  <!-- <link rel="manifest" href="https://github.com/stephaneAG/jm-poissons/manifest.json"> -->
+	<meta name="mobile-web-app-capable" content="yes">
+  <!-- R: clear storage then refresh pageto refresh a manifest after modding it ! -->
+  <link rel="manifest" href="/manifest.json"> <!-- signify to browser we have a WPA -->
+
+  <!-- Icons	================================== -->
+	<!-- Android -->
+	<!-- <link rel="icon" sizes="128x128" href="icons/icon-128.png"/>
+	<link rel="icon" sizes="192x192" href="icons/icon-192.png"/> -->
+  <!-- <link href="web-app.png" rel="icon" type="image/png"> -->
+  <!-- <link href="web-app.png" rel="icon" type="image/png"> -->
+  <!-- <link href="./web-app.png" rel="icon" type="image/png"> -->
+
+
+<style>
+</style>
+</head>
+<body>
+  <h1>Hello World !</h1>
+  <script id="jsbin-javascript">
+    //alert('Hello World !');
+    console.log('Hello World !');
+
+    // ==== enable Service Worker for Offline app ====
+
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+      .register('/asw.js')
+      .then(function() { console.log("Service Worker Registered"); });
+    }
+
+  </script>
+</body>
+</html>
