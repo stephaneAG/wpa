@@ -6,9 +6,14 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('apwa').then(cache => {
       return cache.addAll([
-        '/',
-        '/asw.js',
-        '/index.html',
+        //'/',
+        //'/asw.js',
+        //'/index.html',
+
+        '/wpa/',
+        '/wpa/asw.js',
+        '/wpa/index.html',
+
         //'/web-app.png', // just in case its presence in the manifest doesn't do the trick
         //'/planets',
         //'/bundle.js',
