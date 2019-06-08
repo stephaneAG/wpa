@@ -9,7 +9,7 @@ self.addEventListener('install', e => {
         '/',
         '/asw.js',
         '/index.html',
-        '/web-app.png', // just in case its presence in the manifest doesn't do the trick
+        //'/web-app.png', // just in case its presence in the manifest doesn't do the trick
         //'/planets',
         //'/bundle.js',
         //'/index.css',
