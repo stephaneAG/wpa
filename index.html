@@ -39,7 +39,8 @@
     if('serviceWorker' in navigator) {
       navigator.serviceWorker
       //.register('/asw.js') // served locally ( not https )
-      .register('/wpa/asw.js') // served over github pages ( https )
+      //.register('/wpa/asw.js') // served over github pages ( https )
+      .register('/wpa/asw.js', {scope: '/wpa/'}) // for non-root path ? ..
       .then(function() { console.log("Service Worker Registered"); });
     }
 
