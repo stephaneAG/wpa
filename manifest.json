@@ -3,7 +3,7 @@
   "short_name": "tefTestWPApp",
   "description": "Poissons Enigma",
   "lang": "en-GB",
-  "scope": "/wpa",
+  "scope": "/",
   "start_url": "/",
   "display": "fullscreen",
   "orientation": "portrait",
